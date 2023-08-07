@@ -4,13 +4,14 @@ import { styled } from "@mui/system";
 const MainContainer = styled("div")({
   height: "50%",
   width: "50%",
-  backgroundColor: "black",
+  backgroundColor: "#e2e2e2",
   borderRadius: "8px",
 });
 
 const VideoEl = styled("video")({
   width: "100%",
   height: "100%",
+  
 });
 
 const Video = ({ stream, isLocalStream }) => {

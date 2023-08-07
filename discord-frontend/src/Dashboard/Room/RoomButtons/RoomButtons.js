@@ -6,11 +6,12 @@ import CloseRoomButton from "./CloseRoomButton";
 import ScreenShareButton from "./ScreenShareButton";
 import { connect } from "react-redux";
 import { getActions } from "../../../store/actions/roomActions";
+import {AvatharColor} from "../../../Color"
 
 const MainContainer = styled("div")({
   height: "15%",
   width: "100%",
-  backgroundColor: "#5865f2",
+  backgroundColor: "#e2e2e2",
   borderTopLeftRadius: "8px",
   borderTopRightRadius: "8px",
   display: "flex",

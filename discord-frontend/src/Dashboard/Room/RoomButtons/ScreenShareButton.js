@@ -3,6 +3,7 @@ import IconButton from "@mui/material/IconButton";
 import ScreenShareIcon from "@mui/icons-material/ScreenShare";
 import StopScreenShareIcon from "@mui/icons-material/StopScreenShare";
 import * as webRTCHandler from "../../../realtimeCommunication/webRTCHandler";
+import {AvatharBackgroundColor} from '../../../Color'
 
 const constraints = {
   audio: false,
@@ -38,7 +39,7 @@ const ScreenShareButton = ({
   };
 
   return (
-    <IconButton onClick={handleScreenShareToggle} style={{ color: "white" }}>
+    <IconButton onClick={handleScreenShareToggle} style={{ color: "white",border:'1px solid #fff', backgroundImage:AvatharBackgroundColor }}>
       {isScreenSharingActive ? <StopScreenShareIcon /> : <ScreenShareIcon />}
     </IconButton>
   );

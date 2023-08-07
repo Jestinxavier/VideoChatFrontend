@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import IconButton from "@mui/material/IconButton";
 import VideocamIcon from "@mui/icons-material/Videocam";
 import VideocamOffIcon from "@mui/icons-material/VideocamOff";
+import {AvatharBackgroundColor} from '../../../Color'
 
 const CameraButton = ({ localStream }) => {
   const [cameraEnabled, setCameraEnabled] = useState(true);
@@ -12,7 +13,8 @@ const CameraButton = ({ localStream }) => {
   };
 
   return (
-    <IconButton onClick={handleToggleCamera} style={{ color: "white" }}>
+    <IconButton onClick={handleToggleCamera} style={{ color: "white",border: "1px solid #fff",
+    backgroundImage: AvatharBackgroundColor, }}>
       {cameraEnabled ? <VideocamIcon /> : <VideocamOffIcon />}
     </IconButton>
   );

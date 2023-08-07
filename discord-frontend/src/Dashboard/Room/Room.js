@@ -11,7 +11,11 @@ const MainContainer = styled("div")({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  backgroundColor: "#202225",
+
+  boxShadow: '#17171733 10px 10px 37px 13px',
+
+  // backgroundColor: "#202225",
+  backgroundColor:'#fff',
 });
 
 const fullScreenRoomStyle = {

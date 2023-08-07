@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import IconButton from "@mui/material/IconButton";
 import MicIcon from "@mui/icons-material/Mic";
 import MicOffIcon from "@mui/icons-material/MicOff";
-
+import {AvatharBackgroundColor} from '../../../Color'
 const MicButton = ({ localStream }) => {
   const [micEnabled, setMicEnabled] = useState(true);
 
@@ -12,7 +12,7 @@ const MicButton = ({ localStream }) => {
   };
 
   return (
-    <IconButton onClick={handleToggleMic} style={{ color: "white" }}>
+    <IconButton onClick={handleToggleMic} style={{ color: "white",border:'1px solid #fff', backgroundImage:AvatharBackgroundColor }}>
       {micEnabled ? <MicIcon /> : <MicOffIcon />}
     </IconButton>
   );
