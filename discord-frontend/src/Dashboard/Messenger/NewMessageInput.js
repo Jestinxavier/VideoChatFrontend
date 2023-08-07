@@ -52,6 +52,7 @@ const NewMessageInput = ({ chosenChatDetails }) => {
         value={message}
         onChange={handleMessageValueChange}
         onKeyDown={handleKeyPressed}
+        style={{background:'red'}}
       />
     </MainContainer>
   );

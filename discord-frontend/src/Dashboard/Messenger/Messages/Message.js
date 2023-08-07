@@ -35,7 +35,7 @@ const Message = ({ content, sameAuthor, username, date, sameDay }) => {
   if (sameAuthor && sameDay) {
     return (
       <SameAuthorMessageContent>
-        <SameAuthorMessageText>{content}</SameAuthorMessageText>
+        <SameAuthorMessageText sx={{color:"#000"}}>{content}</SameAuthorMessageText>
       </SameAuthorMessageContent>
     );
   }
@@ -46,11 +46,11 @@ const Message = ({ content, sameAuthor, username, date, sameDay }) => {
         <Avatar username={username} />
       </AvatarContainer>
       <MessageContainer>
-        <Typography style={{ fontSize: "16px", color: "white" }}>
+        <Typography style={{ fontSize: "16px", color: "Gray" }}>
           {username}{" "}
           <span style={{ fontSize: "12px", color: "#72767d" }}>{date}</span>
         </Typography>
-        <MessageContent>{content}</MessageContent>
+        <MessageContent sx={{color:"#000"}}>{content}</MessageContent>
       </MessageContainer>
     </MainContainer>
   );

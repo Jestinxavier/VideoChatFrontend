@@ -24,6 +24,7 @@ const FriendsListItem = ({ id, username, isOnline, setChosenChatDetails }) => {
         textTransform: "none",
         color: "black",
         position: "relative",
+
       }}
     >
       <Avatar username={username} />

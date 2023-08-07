@@ -8,12 +8,14 @@ const Wrapper = styled("div")({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+  background:"#fff",
+  boxShadow: '#80808024 10px 10px 10px 10px',
 });
 
 const WelcomeMessage = () => {
   return (
     <Wrapper>
-      <Typography variant="h6" sx={{ color: "white" }}>
+      <Typography variant="h6" sx={{ color: "#8e9297" }}>
         To start chatting - choose conversation
       </Typography>
     </Wrapper>

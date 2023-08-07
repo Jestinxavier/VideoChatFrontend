@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import Avatar from "../../shared/components/Avatar";
 import * as roomHandler from "../../realtimeCommunication/roomHandler";
+import {AvatharColor} from "../../Color"
 
 const ActiveRoomButton = ({
   creatorUsername,
@@ -32,7 +33,7 @@ const ActiveRoomButton = ({
             minWidth: 0,
             marginTop: "10px",
             color: "white",
-            backgroundColor: "#5865F2",
+            backgroundColor: AvatharColor ,
           }}
           disabled={activeRoomButtonDisabled || isUserInRoom}
           onClick={handleJoinActiveRoom}

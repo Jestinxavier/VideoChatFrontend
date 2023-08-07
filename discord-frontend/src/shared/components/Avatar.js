@@ -11,7 +11,11 @@ const AvatarPreview = styled("div")({
   justifyContent: "center",
   fontSize: "20px",
   fontWeight: "700",
-  color: "white",
+  // color: "white",
+          
+  color: 'white',
+  background: 'linear-gradient(145deg, rgb(131, 22, 22), rgb(244, 69, 44))',
+  boxShadow: 'rgb(146, 146, 146) 20px 20px 60px', 
 });
 
 const Avatar = ({ username, large }) => {

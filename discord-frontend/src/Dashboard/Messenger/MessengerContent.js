@@ -6,6 +6,8 @@ import { getDirectChatHistory } from "../../realtimeCommunication/socketConnecti
 
 const Wrapper = styled("div")({
   flexGrow: 1,
+  background:"#fff",
+  boxShadow: '#80808024 10px 10px 10px 10px',
 });
 
 const MessengerContent = ({ chosenChatDetails }) => {

@@ -2,6 +2,7 @@ import React from "react";
 import { styled } from "@mui/system";
 import Avatar from "../../../shared/components/Avatar";
 import Typography from "@mui/material/Typography";
+import {secondaryText} from '../../../Color'
 
 const MainContainer = styled("div")({
   width: "98%",
@@ -20,6 +21,8 @@ const MessagesHeader = ({ name = "" }) => {
           color: "white",
           marginLeft: "5px",
           marginRight: "5px",
+          color:'black'
+          
         }}
       >
         {name}
